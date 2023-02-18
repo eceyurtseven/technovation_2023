@@ -39,6 +39,10 @@ class _SignUpPageState extends State<SignUpPage> {
       return true;
     }
     else{
+      new Container(
+        child: 
+        Text("Passwords are not the same!"),
+      );
       return false;
     }
   }
