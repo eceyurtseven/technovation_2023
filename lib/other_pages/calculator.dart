@@ -16,7 +16,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
         "Hi!",
         style: TextStyle(
           fontWeight: FontWeight.bold, 
-          fontSize: 35,
+          fontSize: 30,
         ),
         )),
     );
