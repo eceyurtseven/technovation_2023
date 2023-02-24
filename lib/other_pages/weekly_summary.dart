@@ -10,6 +10,10 @@ class WeeklySummaryPage extends StatefulWidget {
 class _WeeklySummaryPageState extends State<WeeklySummaryPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Weekly Summary')
+      ),
+    );
   }
 }

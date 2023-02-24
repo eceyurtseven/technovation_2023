@@ -7,7 +7,7 @@ import 'package:login_page/other_pages/moodmeter.dart';
 import 'package:login_page/other_pages/music.dart';
 import 'package:login_page/other_pages/pomodoro.dart';
 import 'package:login_page/other_pages/quotes.dart';
-import 'package:login_page/other_pages/to_do_list.dart';
+import 'package:login_page/other_pages/to_do_list/to_do_list.dart';
 import 'package:login_page/other_pages/weekly_summary.dart';
 import 'package:login_page/profile/user.dart';
 
@@ -176,7 +176,7 @@ class _HomePageState extends State<HomePage> {
                   primary: Color.fromARGB(255, 152, 44, 235),
                   textStyle: TextStyle(fontWeight: FontWeight.bold),
                 ),
-                child: Text("Pomodoro Time"),
+                child: Text("Pomodoro Timer"),
               ),
             ),
             SizedBox(height: 5),

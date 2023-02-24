@@ -40,6 +40,9 @@ class _CalculatorPageState extends State<CalculatorPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.deepPurple[100],
+      appBar: AppBar(
+        title: Text("Calculator")
+      ),
       body: Column(children: <Widget>[
         Expanded(
           child: Container(

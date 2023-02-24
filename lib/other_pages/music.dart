@@ -10,6 +10,10 @@ class MusicPage extends StatefulWidget {
 class _MusicPageState extends State<MusicPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Music')
+      ),
+    );
   }
 }

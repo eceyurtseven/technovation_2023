@@ -31,6 +31,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -40,10 +42,13 @@ dependencies:
   google_fonts:
   firebase_core: ^2.4.1
   math_expressions: ^2.3.1
+  flutter_slidable: ^1.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
