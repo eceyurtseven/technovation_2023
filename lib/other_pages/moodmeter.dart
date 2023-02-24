@@ -10,6 +10,10 @@ class MoodMeterPage extends StatefulWidget {
 class _MoodMeterPageState extends State<MoodMeterPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Mood Meter')
+      ),
+    );
   }
 }

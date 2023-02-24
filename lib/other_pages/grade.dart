@@ -10,6 +10,10 @@ class GradePage extends StatefulWidget {
 class _GradePageState extends State<GradePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Grade Calculator')
+      ),
+    );
   }
 }
