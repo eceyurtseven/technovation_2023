@@ -4,7 +4,7 @@ import 'package:login_page/other_pages/flashcards.dart';
 import 'package:login_page/other_pages/grade.dart';
 import 'package:login_page/other_pages/journaling.dart';
 import 'package:login_page/other_pages/moodmeter.dart';
-import 'package:login_page/other_pages/music.dart';
+import 'package:login_page/other_pages/music/music.dart';
 import 'package:login_page/other_pages/pomodoro.dart';
 import 'package:login_page/other_pages/quotes.dart';
 import 'package:login_page/other_pages/to_do_list/to_do_list.dart';
