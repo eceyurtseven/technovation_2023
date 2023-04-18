@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:login_page/other_pages/calculator/calculator.dart';
-import 'package:login_page/other_pages/flashcards.dart';
-import 'package:login_page/other_pages/grade.dart';
-import 'package:login_page/other_pages/journaling.dart';
-import 'package:login_page/other_pages/moodmeter.dart';
+import 'package:login_page/other_pages/flashcards/cards.dart';
+import 'package:login_page/other_pages/grade_calculator/gpapage.dart';
+import 'package:login_page/other_pages/journal/journaling.dart';
+import 'package:login_page/other_pages/mood_meter/moodmeter.dart';
 import 'package:login_page/other_pages/music/music.dart';
-import 'package:login_page/other_pages/pomodoro.dart';
-import 'package:login_page/other_pages/quotes.dart';
+import 'package:login_page/other_pages/pomodoro/pomodoro.dart';
+import 'package:login_page/other_pages/quotes/quotes.dart';
 import 'package:login_page/other_pages/to_do_list/to_do_list.dart';
 import 'package:login_page/other_pages/weekly_summary.dart';
 import 'package:login_page/profile/user.dart';
@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => FlashcardsPage()),
+                    MaterialPageRoute(builder: (context) => MyApp()),
                   );
                 },
                 style: ElevatedButton.styleFrom(
@@ -93,7 +93,7 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => GradePage()),
+                    MaterialPageRoute(builder: (context) => GPA()),
                   );
                 },
                 style: ElevatedButton.styleFrom(
@@ -169,7 +169,7 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => PomodoroPage()),
+                    MaterialPageRoute(builder: (context) => TimerCountdown()),
                   );
                 },
                 style: ElevatedButton.styleFrom(
