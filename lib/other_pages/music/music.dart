@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:login_page/other_pages/music/music_last_page.dart';
+import 'package:login_page/other_pages/music/music_new_page.dart';
 import 'package:login_page/other_pages/music/new_box.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class MusicPage extends StatefulWidget {
   const MusicPage({super.key});
@@ -10,6 +13,9 @@ class MusicPage extends StatefulWidget {
 }
 
 class _MusicPageState extends State<MusicPage> {
+  AudioPlayer audioPlayer = AudioPlayer();
+  String mp3FilePath = "lib/other_pages/music/cruel_summer.mp3";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +35,11 @@ class _MusicPageState extends State<MusicPage> {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(8),
-                      child: Image.asset("lib/other_pages/music/images/lover.jpeg"),
+                      child: Image.asset(
+                        "lib/other_pages/music/images/lover.jpeg",
+                        width: 350,
+                        height: 350,
+                        ),
                     ),
 
                   Padding(
@@ -100,12 +110,20 @@ class _MusicPageState extends State<MusicPage> {
               SizedBox(
                 height: 80,
                 child: Row(
-                  children: const[
+                  children: [
                     Expanded(
-                      child: NewBox(
-                        child: Icon(
-                          Icons.skip_previous,
-                          size: 32,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context, 
+                            MaterialPageRoute(builder: (context) => MusicLastPage()),
+                      );
+                        },
+                        child: NewBox(
+                          child: Icon(
+                            Icons.skip_previous,
+                            size: 32,
+                          ),
                         ),
                       ),
                     ),
@@ -113,19 +131,35 @@ class _MusicPageState extends State<MusicPage> {
                       flex: 2,
                       child: Padding(
                         padding: EdgeInsets.symmetric(horizontal: 20.0),
-                        child: NewBox(
-                          child: Icon(
-                            Icons.play_arrow,
-                            size: 32,
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: NewBox(
+                            child: GestureDetector(
+                              onTap: () async {
+                                await audioPlayer.play(UrlSource("https://www.youtube.com/watch?v=ic8j13piAhQ"));
+                              },
+                              child: Icon(
+                                Icons.play_arrow,
+                                size: 32,
+                              ),
+                            ),
                           ),
                         ),
                       ),
                     ),
                     Expanded(
-                      child: NewBox(
-                        child: Icon(
-                          Icons.skip_next,
-                          size: 32,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context, 
+                            MaterialPageRoute(builder: (context) => MusicNewPage()),
+                      );
+                        },
+                        child: NewBox(
+                          child: Icon(
+                            Icons.skip_next,
+                            size: 32,
+                          ),
                         ),
                       ),
                     ),
