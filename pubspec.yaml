@@ -44,7 +44,7 @@ dependencies:
   math_expressions: ^2.3.1
   flutter_slidable: ^1.2.0
   percent_indicator: ^3.4.0
-  cloud_firestore: ^4.4.3
+  cloud_firestore: ^4.5.1
   flutter_screenutil: ^5.0.0
   random_color: ^1.0.5
   audioplayers: ^3.0.1
