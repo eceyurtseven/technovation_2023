@@ -4,6 +4,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
+//NOTE: To login --> mail: technovation@gmail.com and password: 123456 or a new user can be created from sign up page.
+
 class LoginPage extends StatefulWidget{
   final VoidCallback showSignUpPage;
   const LoginPage({Key? key, required this.showSignUpPage}) : super(key: key);
