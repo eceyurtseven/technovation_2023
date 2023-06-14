@@ -64,7 +64,7 @@ class GPAState extends State<GPA>{
     barrierDismissible: false, // user must tap button!
     builder: (BuildContext context) {
       return new AlertDialog(
-        title: new Text('rewind and regret fool !'),
+        title: new Text('Rewind!'),
         content: new SingleChildScrollView(
           child: new ListBody(
             children: <Widget>[
@@ -75,7 +75,7 @@ class GPAState extends State<GPA>{
         ),
         actions: <Widget>[
           new ElevatedButton(
-            child: new Text('Regret'),
+            child: new Text('Back'),
             onPressed: () {
               Navigator.of(context).pop();
             },
